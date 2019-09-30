@@ -1,0 +1,19 @@
+package com.lovecoding.quicksort;
+
+import java.util.concurrent.ArrayBlockingQueue;
+
+public class QuickSort {
+
+	
+	public static void main(String[] args) {
+		QuickSort sort=new QuickSort();
+		int[] arr=new int[]{5,12,9,7,8,6};
+		int start=arr[0];
+		int end=arr[arr.length-1];
+		sort.sortArray(arr);
+	}
+
+	private void sortArray(int[] arr) {
+		
+	}
+}

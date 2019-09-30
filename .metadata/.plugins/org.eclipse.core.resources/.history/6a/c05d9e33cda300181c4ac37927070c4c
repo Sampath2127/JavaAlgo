@@ -1,0 +1,8 @@
+package com.lovecoding.BST;
+
+public class App {
+
+	public static void main(String[] args) {
+		BinaryTree<Intger> bst=new BinaryTree<>();
+	}
+}

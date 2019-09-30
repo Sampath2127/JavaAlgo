@@ -1,0 +1,6 @@
+package com.lovecoding.BST;
+
+public class Person implements Comparable<Person> {
+
+	
+}

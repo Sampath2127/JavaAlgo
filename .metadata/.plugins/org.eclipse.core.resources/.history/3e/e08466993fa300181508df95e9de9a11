@@ -1,0 +1,29 @@
+package com.lovecoding.stackArrays;
+
+public class Stack<T> {
+
+	private T[] stack;
+	private int numOfItems;
+	
+	public Stack(){
+		//this.stack=(T[])new T[1];*****Not Allowed Generic Types for Arrays**** 
+		this.stack=(T[])new Object[1];
+	}
+	
+	public void push(T newData){
+		
+		if(numOfItems==stack.length){
+			resizeArray(2*stack.length);
+		}
+		stack[numOfItems++]=newData;
+	}
+
+	private void resizeArray(int capacity) {
+		T[] copyArray=(T[]) new Object[capacity];
+		
+		for(int i=0; i<numOfItems; i++){
+			copyArray[i]=stack[i];
+		}
+	}
+	
+}

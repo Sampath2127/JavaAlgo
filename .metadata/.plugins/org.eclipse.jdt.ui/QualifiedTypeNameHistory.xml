@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.lovecoding.SinglyLinkedList.LinkedList"/>
+<fullyQualifiedTypeName name="com.lovecoding.stackArrays.Stack"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="com.lovecoding.DijkstraInterpreter.Algorithm"/>
+<fullyQualifiedTypeName name="com.lovecoding.Queue.Queue"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="com.lovecoding.BST.BinaryTree"/>
+<fullyQualifiedTypeName name="com.lovecoding.quicksort.QuickSort"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.lovecoding.Stacks.Stack"/>
+</qualifiedTypeNameHistroy>

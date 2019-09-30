@@ -1,0 +1,6 @@
+package com.lovecoding.BST;
+
+public class Node<T extends Comparable<T>> {
+
+	
+}

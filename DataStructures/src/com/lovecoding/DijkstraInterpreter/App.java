@@ -1,0 +1,13 @@
+package com.lovecoding.DijkstraInterpreter;
+
+public class App {
+
+	public static void main(String[] args) {
+		Algorithm algorithm=new Algorithm();
+		algorithm.InterpretExpression("( ( 2 + 1 ) * ( 3 + 1 ) )");
+		algorithm.result();
+	}
+	
+	
+	
+}

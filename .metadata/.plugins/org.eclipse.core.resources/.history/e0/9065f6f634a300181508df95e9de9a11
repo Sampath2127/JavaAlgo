@@ -1,0 +1,27 @@
+package com.lovecoding.Stacks;
+
+public class Stack<T extends Comparable<T>> {
+
+	 private Node<T> root;
+	 private int size;
+	 
+	 public void push(T newData){
+		 this.size++;
+		 
+		 if(root==null){
+			 this.root=new Node<>(newData);
+		 }else{
+			 Node<T> newNode=new Node<T>(newData);
+			 newNode.setNextNode(root);
+			 this.root=newNode;
+		 }
+	 }
+	 
+	 public int size(){
+		 return this.size;
+	 }
+	 
+	 public boolean isEmpty(){
+		 return this.root==null;
+	 }
+}

@@ -1,0 +1,11 @@
+package com.lovecoding.Stacks;
+
+public class Stack<T extends Comparable<T>> {
+
+	 private Node<T> root;
+	 private int size;
+	 
+	 public void push(T newData){
+		 this.size++;
+	 }
+}

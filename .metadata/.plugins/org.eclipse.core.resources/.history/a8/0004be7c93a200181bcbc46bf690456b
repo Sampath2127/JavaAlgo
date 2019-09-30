@@ -1,0 +1,7 @@
+package com.lovecoding.SinglyLinkedList;
+
+public class Node<T extends Comparable<T>> {
+	
+	
+
+}

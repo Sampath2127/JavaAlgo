@@ -1,0 +1,11 @@
+package com.lovecoding.BST;
+
+public class App {
+
+	public static void main(String[] args) {
+		BinaryTree<Integer> bst=new BinaryTree<>();
+		
+		
+		System.out.println(bst.getMax(node));
+	}
+}

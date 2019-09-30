@@ -1,0 +1,15 @@
+package com.lovecoding.Lists;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinnkedLists {
+
+	public static void main(String[] args) {
+		List<Integer> LList=new LinkedList<>();
+		LList.add(1);
+		LList.add(200);
+		System.out.println(LList.get(0));
+	}
+
+}

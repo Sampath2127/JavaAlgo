@@ -1,0 +1,23 @@
+package com.lovecoding.Lists;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinnkedLists {
+
+	public static void main(String[] args) {
+
+		List<Integer> list=new LinkedList<>();
+		
+		for(int i=0; i<10E6; i++){
+			list.add(i);
+		}
+		long currentTimeMillis = System.currentTimeMillis();
+		System.out.println(currentTimeMillis);
+		list.remove(0);
+		long endTimeMillis = System.currentTimeMillis();
+		System.out.println(list.get(0)+" Time take to remove :"+(endTimeMillis-currentTimeMillis)+"Seconds");
+		
+	}
+
+}

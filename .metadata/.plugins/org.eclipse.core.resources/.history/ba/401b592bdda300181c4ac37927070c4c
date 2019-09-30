@@ -1,0 +1,23 @@
+package com.lovecoding.BST;
+
+public class App {
+
+	public static void main(String[] args) {
+		BinaryTree<String> bst=new BinaryTree<>();
+		
+		
+		bst.insertData("Thota");
+		bst.insertData("Karin");
+		bst.insertData("Srini");
+		bst.insertData("Julie");
+		bst.insertData("Jennifer");
+		bst.insertData("Adam");
+		bst.insertData("Elie");
+		bst.insertData("Zack");
+		
+		System.out.println(bst.getMax());
+		System.out.println(bst.getMin());
+		
+		bst.inOrderTraversal();
+	}
+}

@@ -1,0 +1,10 @@
+package com.lovecoding.stackArrays;
+
+public class App {
+
+	public static void main(String[] args) {
+		Stack<T> stack=new Stack<>();
+		
+	}
+	
+}

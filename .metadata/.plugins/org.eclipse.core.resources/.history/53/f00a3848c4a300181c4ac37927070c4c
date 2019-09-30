@@ -1,0 +1,9 @@
+package com.lovecoding.BST;
+
+public class App {
+
+	private void mian() {
+		// TODO Auto-generated method stub
+
+	}
+}

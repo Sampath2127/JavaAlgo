@@ -1,0 +1,107 @@
+package com.lovecoding.BST;
+
+public class BinaryTree<T extends Comparable<T>> implements Tree<T>{
+
+	private Node<T> root;
+
+	@Override
+	public void traverseal() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	private void insert(T data, Node<T> node) {
+		
+		if(data.compareTo(node.getData())<0 ){
+			if(node.getLeftChild()==null) node.setLeftChild(new Node<>(data));
+			else insert(data, node.getLeftChild());
+		}else {
+			if(node.getRightChild()==null) node.setRightChild(new Node<>(data));
+			else insert(data, node.getRightChild());
+		}
+	}
+
+	@Override
+	public void delete(T data) {
+		
+		if(root!=null) delete(root, data);
+	}
+
+	
+	private void delete(Node<T> node, T data) {
+		Node<T> current=node;
+		Node<T> parent=node;
+		boolean isLeftChild=false;
+		if(current==null) return;
+		
+		while(current.getData()!=null && current.getData().compareTo(data)!=0){
+			parent=current;
+			
+			if(data.compareTo(current.getData())<0){
+				current=current.getLeftChild();
+				isLeftChild=true;
+			}else{
+				current=current.getRightChild();
+				isLeftChild=false;
+			}
+		}
+		if(current==null)
+			return;
+		
+		if(current.getLeftChild()==null && current.getRightChild()==null){
+			if(isLeftChild) parent.setLeftChild(null);
+			else parent.setRightChild(null);
+		}
+		
+		
+	}
+
+
+	public T getMax(Node<T> node) {
+		if(node.getRightChild()==null) return node.getData();
+		else return getMax(node.getRightChild());
+	}
+
+	
+	public T getMin(Node<T> node) {
+		if(node.getLeftChild()==null) return node.getData();
+		else return getMin(node.getLeftChild());
+	}
+	
+	@Override
+	public void insertData(T data){
+		if(root==null) root=new Node<>(data);
+		else insert(data, root);
+	}
+
+
+	@Override
+	public T getMax() {
+	
+		if(root==null) return null;
+		return getMax(root);
+	}
+
+
+	@Override
+	public T getMin() {
+		
+		if(root==null) return null;
+		return getMin(root);
+	}
+
+
+	@Override
+	public void inOrderTraversal() {
+		if(root!=null) inOrderTraversal(root);
+		
+	}
+
+
+	private void inOrderTraversal(Node<T> node) {
+		if(node.getLeftChild()!=null) inOrderTraversal(node.getLeftChild());
+		System.out.print(node+" --> ");
+		if(node.getRightChild()!=null) inOrderTraversal(node.getRightChild());
+	}
+}

@@ -1,0 +1,6 @@
+package com.lovecoding.Queue;
+
+public class Node<T extends Comparable<T>> {
+
+	
+}
