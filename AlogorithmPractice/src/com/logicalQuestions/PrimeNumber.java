@@ -6,7 +6,7 @@ public class PrimeNumber {
 
 	public void printPrimes(int n){
 		for(int i=2; i<n; i++){
-			if(findPrime(i)) System.out.println(i);;
+			if(findPrime(i)) System.out.println(i);
 		}
 	}
 	private boolean findPrime(int i) {
